@@ -23,5 +23,65 @@
             }
 
         }
+
+        function oneRound() {
+
+            let playerSelection = prompt('Rock, paper or scissors?', ' ');
+
+            let computerSelection = computerPlay();
+
+            switch (true) {
+
+                case playerSelection == 'Rock' && computerSelection == 'Scissors':
+
+                console.log('You win! Rock beats scissors.');
+
+                break;
+
+                case playerSelection == 'Rock' && computerSelection == 'Paper':
+
+                console.log('You lose! Paper beats rock.');
+
+                break;
+
+                case playerSelection == 'Rock' && computerSelection == 'Rock':
+
+                console.log('Draw');
+
+                break;
+
+                case playerSelection == 'Paper' && computerSelection == 'Scissors':
+
+                console.log('You lose! Scissors beat paper.');
+
+                break;
+
+                case playerSelection == 'Paper' && computerSelection == 'Rock':
+
+                console.log('You win! Paper beats rock.');
+
+                break;
+
+                case playerSelection == 'Paper' && computerSelection == 'Paper':
+
+                console.log('Draw');
+
+                case playerSelection == 'Scissors' && computerSelection == 'Rock':
+
+                console.log('You lose! Rock beats scissors.');
+
+                break;
+
+                case playerSelection == 'Scissors' && computerSelection == 'Paper':
+
+                console.log('You win! Scissors beat paper.');
+
+                break;
+
+                case playerSelection == 'Scissors' && computerSelection == 'Scissors':
+
+                console.log('Draw');
+            }
+        }
     </script>
 </html>
