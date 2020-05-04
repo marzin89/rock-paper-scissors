@@ -32,55 +32,55 @@
 
             switch (true) {
 
-                case playerSelection == 'Rock' && computerSelection == 'Scissors':
+                case playerSelection == 'ROCK' && computerSelection == 'Scissors':
 
-                console.log('You win! Rock beats scissors.');
-
-                break;
-
-                case playerSelection == 'Rock' && computerSelection == 'Paper':
-
-                console.log('You lose! Paper beats rock.');
+                return 'You win! Rock beats scissors.';
 
                 break;
 
-                case playerSelection == 'Rock' && computerSelection == 'Rock':
+                case playerSelection == 'ROCK' && computerSelection == 'Paper':
 
-                console.log('Draw');
-
-                break;
-
-                case playerSelection == 'Paper' && computerSelection == 'Scissors':
-
-                console.log('You lose! Scissors beat paper.');
+                return 'You lose! Paper beats rock.';
 
                 break;
 
-                case playerSelection == 'Paper' && computerSelection == 'Rock':
+                case playerSelection == 'ROCK' && computerSelection == 'Rock':
 
-                console.log('You win! Paper beats rock.');
-
-                break;
-
-                case playerSelection == 'Paper' && computerSelection == 'Paper':
-
-                console.log('Draw');
-
-                case playerSelection == 'Scissors' && computerSelection == 'Rock':
-
-                console.log('You lose! Rock beats scissors.');
+                return 'Draw';
 
                 break;
 
-                case playerSelection == 'Scissors' && computerSelection == 'Paper':
+                case playerSelection == 'PAPER' && computerSelection == 'Scissors':
 
-                console.log('You win! Scissors beat paper.');
+                return 'You lose! Scissors beat paper.';
 
                 break;
 
-                case playerSelection == 'Scissors' && computerSelection == 'Scissors':
+                case playerSelection == 'PAPER' && computerSelection == 'Rock':
 
-                console.log('Draw');
+                return 'You win! Paper beats rock.';
+
+                break;
+
+                case playerSelection == 'PAPER' && computerSelection == 'Paper':
+
+                return 'Draw';
+
+                case playerSelection == 'SCISSORS' && computerSelection == 'Rock':
+
+                return 'You lose! Rock beats scissors.';
+
+                break;
+
+                case playerSelection == 'SCISSORS' && computerSelection == 'Paper':
+
+                return 'You win! Scissors beat paper.';
+
+                break;
+
+                case playerSelection == 'SCISSORS' && computerSelection == 'Scissors':
+
+                return 'Draw';
             }
         }
     </script>
