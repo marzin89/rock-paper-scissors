@@ -32,53 +32,53 @@
 
             switch (true) {
 
-                case playerSelection == 'ROCK' && computerSelection == 'Scissors':
+                case playerSelection.toLowerCase() == 'Rock'.toLowerCase() && computerSelection == 'Scissors':
 
                 return 'You win! Rock beats scissors.';
 
                 break;
 
-                case playerSelection == 'ROCK' && computerSelection == 'Paper':
+                case playerSelection.toLowerCase() == 'Rock'.toLowerCase() && computerSelection == 'Paper':
 
                 return 'You lose! Paper beats rock.';
 
                 break;
 
-                case playerSelection == 'ROCK' && computerSelection == 'Rock':
+                case playerSelection.toLowerCase() == 'Rock'.toLowerCase() && computerSelection == 'Rock':
 
                 return 'Draw';
 
                 break;
 
-                case playerSelection == 'PAPER' && computerSelection == 'Scissors':
+                case playerSelection.toLowerCase() == 'Paper'.toLowerCase() && computerSelection == 'Scissors':
 
                 return 'You lose! Scissors beat paper.';
 
                 break;
 
-                case playerSelection == 'PAPER' && computerSelection == 'Rock':
+                case playerSelection.toLowerCase() == 'Paper'.toLowerCase() && computerSelection == 'Rock':
 
                 return 'You win! Paper beats rock.';
 
                 break;
 
-                case playerSelection == 'PAPER' && computerSelection == 'Paper':
+                case playerSelection.toLowerCase() == 'Paper'.toLowerCase() && computerSelection == 'Paper':
 
                 return 'Draw';
 
-                case playerSelection == 'SCISSORS' && computerSelection == 'Rock':
+                case playerSelection.toLowerCase() == 'Scissors'.toLowerCase() && computerSelection == 'Rock':
 
                 return 'You lose! Rock beats scissors.';
 
                 break;
 
-                case playerSelection == 'SCISSORS' && computerSelection == 'Paper':
+                case playerSelection.toLowerCase() == 'Scissors'.toLowerCase() && computerSelection == 'Paper':
 
                 return 'You win! Scissors beat paper.';
 
                 break;
 
-                case playerSelection == 'SCISSORS' && computerSelection == 'Scissors':
+                case playerSelection.toLowerCase() == 'Scissors'.toLowerCase() && computerSelection == 'Scissors':
 
                 return 'Draw';
             }
