@@ -190,6 +190,23 @@
 
             }
 
+            let playerFinalScore = playerScore1 + playerScore2 + playerScore3 + playerScore4 + playerScore5;
+
+            let computerFinalScore = computerScore1 + computerScore2 + computerScore3 + computerScore4 + computerScore5;
+
+            if ((playerScore1 + playerScore2 + playerScore3 + playerScore4 + playerScore5) > (computerScore1 + computerScore2 + computerScore3 + computerScore4 + computerScore5)) {
+
+            console.log('You win!', playerFinalScore, computerFinalScore);
+            
+            } else if ((playerScore1 + playerScore2 + playerScore3 + playerScore4 + playerScore5) < (computerScore1 + computerScore2 + computerScore3 + computerScore4 + computerScore5)) {
+
+            console.log('You lose!', playerFinalScore, computerFinalScore);
+
+            } else {
+
+            console.log('Draw!');
+            }
+
         }
     </script>
 </html>
