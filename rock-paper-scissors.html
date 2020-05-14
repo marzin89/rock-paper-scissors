@@ -17,13 +17,14 @@
             } else if (result >= 1 && result < 2) {
 
                 return 'Paper';
+            
             } else {
 
                 return 'Scissors';
             }
-
+        
         }
-
+        
         function oneRound() {
 
             let playerSelection = prompt('Rock, paper or scissors?', ' ');
@@ -82,6 +83,113 @@
 
                 return 'Draw';
             }
+
+        }
+
+        
+
+        function game() {
+
+            let playerScore1;
+
+            let computerScore1;
+
+            let oneRoundResult1 = oneRound();
+
+            if (oneRoundResult1 == 'You win! Rock beats scissors.' || oneRoundResult1 == 'You win! Paper beats rock.' || oneRoundResult1 == 'You win! Scissors beat paper.') {
+
+                console.log(oneRoundResult1, playerScore1 = 1, computerScore1 = 0);
+
+            } else if (oneRoundResult1 == 'You lose! Paper beats rock.' || oneRoundResult1 == 'You lose! Scissors beat paper.' || oneRoundResult1 == 'You lose! Rock beats scissors.') {
+
+                console.log(oneRoundResult1, playerScore1 = 0, computerScore1 = 1);
+
+            } else {
+
+                console.log(oneRoundResult1, playerScore1 = 0, computerScore1 = 0);
+
+            }
+
+            let playerScore2;
+
+            let computerScore2;
+
+            let oneRoundResult2 = oneRound();
+
+            if (oneRoundResult2 == 'You win! Rock beats scissors.' || oneRoundResult2 == 'You win! Paper beats rock.' || oneRoundResult2 == 'You win! Scissors beat paper.') {
+
+            console.log(oneRoundResult2, playerScore2 = 1, computerScore2 = 0);
+
+            } else if (oneRoundResult2 == 'You lose! Paper beats rock.' || oneRoundResult2 == 'You lose! Scissors beat paper.' || oneRoundResult2 == 'You lose! Rock beats scissors.') {
+
+            console.log(oneRoundResult2, playerScore2 = 0, computerScore2 = 1);
+
+            } else {
+
+            console.log(oneRoundResult2, playerScore2 = 0, computerScore2 = 0);
+
+            }
+
+            let playerScore3;
+
+            let computerScore3;
+
+            let oneRoundResult3 = oneRound();
+
+            if (oneRoundResult3 == 'You win! Rock beats scissors.' || oneRoundResult3 == 'You win! Paper beats rock.' || oneRoundResult3 == 'You win! Scissors beat paper.') {
+
+            console.log(oneRoundResult3, playerScore3 = 1, computerScore3 = 0);
+
+            } else if (oneRoundResult3 == 'You lose! Paper beats rock.' || oneRoundResult3 == 'You lose! Scissors beat paper.' || oneRoundResult3 == 'You lose! Rock beats scissors.') {
+
+            console.log(oneRoundResult3, playerScore3 = 0, computerScore3 = 1);
+
+            } else {
+
+            console.log(oneRoundResult3, playerScore3 = 0, computerScore3 = 0);
+        
+            }
+
+            let playerScore4;
+
+            let computerScore4;
+
+            let oneRoundResult4 = oneRound();
+        
+            if (oneRoundResult4 == 'You win! Rock beats scissors.' || oneRoundResult4 == 'You win! Paper beats rock.' || oneRoundResult4 == 'You win! Scissors beat paper.') {
+
+            console.log(oneRoundResult4, playerScore4 = 1, computerScore4 = 0);
+
+            } else if (oneRoundResult4 == 'You lose! Paper beats rock.' || oneRoundResult4 == 'You lose! Scissors beat paper.' || oneRoundResult4 == 'You lose! Rock beats scissors.') {
+
+            console.log(oneRoundResult4, playerScore4 = 0, computerScore4 = 1);
+
+            } else {
+
+            console.log(oneRoundResult4, playerScore4 = 0, computerScore4 = 0);
+
+            }
+
+            let playerScore5;
+
+            let computerScore5;
+
+            let oneRoundResult5 = oneRound();
+
+            if (oneRoundResult5 == 'You win! Rock beats scissors.' || oneRoundResult5 == 'You win! Paper beats rock.' || oneRoundResult5 == 'You win! Scissors beat paper.') {
+
+            console.log(oneRoundResult5, playerScore5 = 1, computerScore5 = 0);
+
+            } else if (oneRoundResult5 == 'You lose! Paper beats rock.' || oneRoundResult5 == 'You lose! Scissors beat paper.' || oneRoundResult5 == 'You lose! Rock beats scissors.') {
+
+            console.log(oneRoundResult5, playerScore5 = 0, computerScore5 = 1);
+
+            } else {
+
+            console.log(oneRoundResult5, playerScore5 = 0, computerScore5 = 0);
+
+            }
+
         }
     </script>
 </html>
